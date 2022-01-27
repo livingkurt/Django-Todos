@@ -13,6 +13,7 @@
       background-color: #FAFAFA;
       font-family: 'Quicksand', sans-serif;
       padding-top: 50px;
+      font-size: 16px;
     }
 
     h1,
@@ -83,7 +84,7 @@
     .task-complete-icon {
       height: 20px;
       width: 20px;
-      background-color: rgb(105, 192, 105);
+      background-color: #ba85eb;
       border-radius: 50%;
     }
 
@@ -136,11 +137,10 @@
 
 
     #add-link {
-      /* color: #6faceb; */
       text-decoration: none;
       font-size: 42px;
       border-radius: 5px;
-      height: 26px;
+      height: 24px;
       display: flex;
       align-items: center;
       padding: 11px;
@@ -150,7 +150,6 @@
       background: linear-gradient(45deg, #6faceb 0%, #6febce 100%);
       -webkit-box-shadow: 2px 2px 13px -4px rgb(0 0 0 / 21%);
       box-shadow: 2px 2px 13px -4px rgb(0 0 0 / 21%);
-      /* text-shadow: 1px 1px #81413b; */
 
     }
 
@@ -170,10 +169,28 @@
     input[type=text],
     input[type=password],
     textarea {
-      border: 1px solid #757575;
+      font-family: 'Quicksand', sans-serif;
+      text-decoration: none;
       border-radius: 5px;
-      padding: 10px;
-      width: 90%;
+      display: flex;
+      align-items: center;
+      padding: 11px;
+      font-size: 16px;
+      /* -webkit-box-shadow: inset 2px 2px 13px -4px rgb(0 0 0 / 21%);
+      box-shadow: inset -1px 2px 15px 1px rgb(169 133 255 / 85%); */
+      border: 0;
+    }
+
+    input[type=text] {
+      box-shadow: inset -1px 2px 15px 1px rgb(169 133 255 / 85%);
+    }
+
+    input[type=password] {
+      box-shadow: inset -1px 2px 15px 1px rgb(54 162 255 / 85%);
+    }
+
+    textarea {
+      box-shadow: inset -1px 2px 15px 1px rgb(133 210 255 / 85%);
     }
 
     label {
@@ -187,14 +204,18 @@
     }
 
     .button {
-      border: 1px solid #757575;
-      background-color: #FFF;
-      color: #EB796F;
-      padding: 10px;
-      font-size: 14px;
-      border-radius: 5px;
-      cursor: pointer;
       text-decoration: none;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      padding: 11px;
+      background: #6fdcd4;
+      text-align: center;
+      font-size: 16px;
+      color: white;
+      background: linear-gradient(45deg, #e36feb 0%, #6faceb 100%);
+      -webkit-box-shadow: 2px 2px 13px -4px rgb(0 0 0 / 21%);
+      box-shadow: 2px 2px 13px -4px rgb(0 0 0 / 21%);
     }
 
     .card-body {
