@@ -68,6 +68,13 @@
       background-color: #fff;
       border-top: 1px solid #dfe4ea;
       overflow: hidden;
+      transition: all 0.2s;
+      box-shadow: 0px;
+    }
+
+    .task-wrapper:hover {
+      transform: scale(1.01);
+      box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
     }
 
     .task-title {
@@ -150,7 +157,11 @@
       background: linear-gradient(45deg, #6faceb 0%, #6febce 100%);
       -webkit-box-shadow: 2px 2px 13px -4px rgb(0 0 0 / 21%);
       box-shadow: 2px 2px 13px -4px rgb(0 0 0 / 21%);
+      transition: all 0.2s;
+    }
 
+    #add-link:hover {
+      transform: scale(1.05);
     }
 
     #search-add-wrapper {
@@ -182,15 +193,15 @@
     }
 
     input[type=text] {
-      box-shadow: inset -1px 2px 15px 1px rgb(169 133 255 / 85%);
+      box-shadow: inset -1px 2px 18px 0px rgb(169 133 255 / 85%);
     }
 
     input[type=password] {
-      box-shadow: inset -1px 2px 15px 1px rgb(54 162 255 / 85%);
+      box-shadow: inset -1px 2px 18px 0px rgb(54 162 255 / 85%);
     }
 
     textarea {
-      box-shadow: inset -1px 2px 15px 1px rgb(133 210 255 / 85%);
+      box-shadow: inset -1px 2px 18px 0px rgb(133 210 255 / 85%);
     }
 
     label {
