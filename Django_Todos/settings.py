@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 
 import os
 import dj_database_url
+import django_heroku
 
 db_from_env = dj_database_url.config(conn_max_age=600)
 # DATABASES['default'].update(db_from_env)
@@ -162,3 +163,5 @@ MEDIA_URL = '/media/'
 SECRET_KEY = os.environ.get('secretkey', 'secretkey')
 EMAIL_HOST_USER = os.environ.get('lavacquek@icloud.com')
 EMAIL_HOST_PASSWORD = os.environ.get('hello')
+
+django_heroku.settings(locals())
