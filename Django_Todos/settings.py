@@ -25,7 +25,7 @@ SECRET_KEY = '1jv9go2rru!3n$k#mf0jm3(7)q!b3m+6ffusx)0avzzx)nt)ss'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['py-dj-todos.herokuapp.com']
 
 
 # Application definition
