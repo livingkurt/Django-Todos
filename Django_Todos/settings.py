@@ -159,6 +159,6 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
 
-# SECRET_KEY = os.environ.get('laodbsu')
-# EMAIL_HOST_USER = os.environ.get('lavacquek@icloud.com')
-# EMAIL_HOST_PASSWORD = os.environ.get('hello')
+SECRET_KEY = 'secretkey'
+EMAIL_HOST_USER = os.environ.get('lavacquek@icloud.com')
+EMAIL_HOST_PASSWORD = os.environ.get('hello')
