@@ -14,7 +14,8 @@ import os
 import dj_database_url
 
 db_from_env = dj_database_url.config(conn_max_age=600)
-DATABASES['default'].update(db_from_env)
+# DATABASES['default'].update(db_from_env)
+DATABASES = { 'default': dj_database_url.config() }
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -92,11 +93,11 @@ DATABASES = {
 
     'default': {
 
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
 
         'NAME': 'py-dj-todos',
 
-        'USER': 'livingkurt',
+        'USER': 'postgres',
 
         'PASSWORD': 'hello',
 
@@ -107,6 +108,7 @@ DATABASES = {
     }
 
 }
+
 
 
 # Password validation
