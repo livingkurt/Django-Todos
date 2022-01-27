@@ -5,7 +5,8 @@
 <div class="header-bar">
   <div>
     <h1>Hello {{request.user|title}}</h1>
-    <h3 style="margin:0">You have <i>{{count}}</i> incomplete task{{ count|pluralize:"s" }}</h3>
+    <h3 style="margin:0">You have <span style="font-size: 39px; margin: 10px;">{{count}}</span> incomplete
+      task{{count|pluralize:"s" }}</h3>
   </div>
 
   {% if request.user.is_authenticated %}
