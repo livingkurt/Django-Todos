@@ -8,7 +8,7 @@
 
 # Inspiration
 
-What a better way to learn about a technology than to learn by creating a todo app. Making the todo app was fun deploying it to heroku was not. But I prevailed. Checkout the deploy here <a href="http://localhost:8000/login/?next=/">Django-Todos</a>
+What a better way to learn about a technology than to learn by creating a todo app. Making the todo app was fun deploying it to heroku was not. But I prevailed. Checkout the deploy here <a href="https://py-dj-todos.herokuapp.com//login/?next=/" target="_blank">Django-Todos</a>
 
 
 # Features
