@@ -32,8 +32,18 @@
     <div class="task-title">
       {% if task.complete %}
       <div class="task-complete-icon"></div>
+      <!-- <form method="PUT">
+        <label for="">{{form.complete.label}}</label>
+        {{form.complete}}
+        <input style="margin-top:10px;" class="" type="submit" value="" class="task-complete-icon">
+      </form> -->
       <i><s><a href="/task-update/{{ task.id }}/">{{task}}</a></s></i> {% else %}
       <div class="task-incomplete-icon"></div>
+      <!-- <form method="PUT">
+        <label for="">{{form.complete.label}}</label>
+        {{form.complete}}
+        <input style="margin-top:10px;" class="" type="submit" value="" class="task-incomplete-icon">
+      </form> -->
       <a href="/task-update/{{ task.id }}/">{{task}}</a> {% endif %}
     </div>
     <div class="task-controls">
