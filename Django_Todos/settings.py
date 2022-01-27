@@ -150,9 +150,15 @@ LOGIN_URL = 'login'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "/base/static")]
+
+
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
+
+# SECRET_KEY = os.environ.get('laodbsu')
+# EMAIL_HOST_USER = os.environ.get('lavacquek@icloud.com')
+# EMAIL_HOST_PASSWORD = os.environ.get('hello')
