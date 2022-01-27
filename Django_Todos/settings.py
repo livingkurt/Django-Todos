@@ -101,7 +101,7 @@ DATABASES = {
 
         'PASSWORD': 'hello',
 
-        'HOST': '',
+        'HOST': 'localhost',
 
         'PORT': '',
 
