@@ -30,6 +30,7 @@ First clone this repo
 git clone git@github.com:livingkurt/Django-Todos.git
 ```
 
+
 Set up Virtual Envirnment
 
 ```shell

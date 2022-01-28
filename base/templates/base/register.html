@@ -9,12 +9,29 @@
 <div class="card-body">
   <form method="POST">
     {% csrf_token %}
-    <label for="">{{form.username.label}}</label>
-    {{form.username}}
-    <label for="">{{form.password1.label}}</label>
-    {{form.password1}}
-    <label for="">{{form.password2.label}}</label>
-    {{form.password2}}
+    <div style="display: flex; flex-direction: row;">
+      <div style="">
+        <label for="">{{form.username.label}}</label>
+        {{form.username}}
+
+      </div>
+      <p class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</p>
+    </div>
+    <div style="display: flex; flex-direction: row;">
+      <div style="">
+        <label for="">{{form.password1.label}}</label>
+        {{form.password1}}
+        <label for="">{{form.password2.label}}</label>
+        {{form.password2}}
+      </div>
+      <ul>
+        <li>Your password can’t be too similar to your other personal information.</li>
+        <li>Your password must contain at least 8 characters.</li>
+        <li>Your password can’t be a commonly used password.</li>
+        <li>Your password can’t be entirely numeric.</li>
+      </ul>
+    </div>
+    <!-- {{form.as_p}} -->
     <input style="margin-top:10px;" class="button" type="submit" value="Register">
   </form>
 
