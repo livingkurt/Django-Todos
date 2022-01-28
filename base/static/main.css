@@ -247,10 +247,91 @@ label {
 	transition: all 0.2s;
 }
 
-.button:hover {
+.button:hover,
+.icon:hover .info:hover {
 	transform: scale(1.05);
 }
 
 .card-body {
 	padding: 20px;
+}
+
+.username-info,
+.password-info {
+	position: absolute;
+	/* left: 30px; */
+	left: 50%;
+	/* top: 50%; */
+	transform: translate(-50%, -0%);
+	color: black;
+	background: white;
+	box-shadow: 2px 2px 13px -4px rgb(0 0 0 / 21%);
+	padding: 15px;
+	border-radius: 10px;
+	width: 250px;
+	opacity: 0;
+	font-size: 12px;
+	transition: all 0.2s;
+}
+
+#username-info {
+	opacity: 0;
+	z-index: 0;
+}
+#password-info {
+	opacity: 0;
+	z-index: 0;
+}
+
+.username-info {
+	top: 50px;
+}
+.password-info {
+	top: 50px;
+}
+.sh-username-info,
+.sh-password-info {
+	-webkit-appearance: none;
+	font-size: 20px;
+	border-radius: 18px;
+	height: 30px;
+	width: 30px;
+	color: white;
+	background: linear-gradient(45deg, #6faceb 0%, #6febce 100%);
+	/* -webkit-box-shadow: 2px 2px 13px -4px rgb(0 0 0 / 21%); */
+	box-shadow: 2px 2px 13px -4px rgb(0 0 0 / 21%);
+	transition: all 0.2s;
+	border: 0px;
+}
+
+/* .sh-username-info:hover .username-info {
+	opacity: 1;
+}
+.sh-password-info:hover .password-info {
+	opacity: 1;
+} */
+
+/* @media screen and (max-width: 560px) {
+	.username-info {
+		left: -130px;
+	}
+	.password-info {
+		left: -130px;
+	}
+} */
+
+.icon {
+	display: flex;
+	justify-content: flex-end;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+.info {
+	position: absolute;
+	left: 9px;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+.icon:hover .info:hover {
+	transform: scale(1.05);
 }

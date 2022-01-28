@@ -6,32 +6,54 @@
   <h1>Register</h1>
 </div>
 
-<div class="card-body">
+<div class="card-body" style="position: relative;">
+  <div class="username-info" id="username-info">
+    <div class="icon" onclick="username_show_hide()">&#10005;
+    </div>
+    Required. 150 characters or fewer. Letters,
+    digits and @/./+/-/_ only.
+  </div>
+  <div class="password-info" id="password-info">
+    <div class="icon" onclick="password_show_hide()">&#10005;
+    </div>
+    <div>&#9900; Your password cant be too similar to your other personal information.</div>
+    <label>&#9900; Your password must contain at least 8 characters.</label>
+    <label>&#9900; Your password cant be a commonly used password.</label>
+    <label>&#9900; Your password cant be entirely numeric.</label>
+  </div>
   <form method="POST">
     {% csrf_token %}
-    <div style="display: flex; flex-direction: row;">
+    <div style="display: flex; flex-direction: row; position: relative;">
       <div style="">
         <label for="">{{form.username.label}}</label>
-        {{form.username}}
+        <div style="display:flex;flex-direction: row; align-items: center;">
+          {{form.username}}
+          <div style="position: relative; margin-top: 10px; left: 20px;" class="sh-username-info">
+            <div class="info" onclick="username_show_hide()">&#8505;</div>
 
+          </div>
+        </div>
       </div>
-      <p class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</p>
+
+
     </div>
-    <div style="display: flex; flex-direction: row;">
+    <div style="display: flex; flex-direction: row; position: relative;">
+
       <div style="">
         <label for="">{{form.password1.label}}</label>
-        {{form.password1}}
+        <div style="display:flex;flex-direction: row; align-items: center;">
+          {{form.password1}}
+          <div style="position: relative; margin-top: 10px; left: 20px;" class="sh-password-info">
+            <div class="info" onclick="password_show_hide()">&#8505;</div>
+
+
+          </div>
+        </div>
         <label for="">{{form.password2.label}}</label>
         {{form.password2}}
       </div>
-      <ul>
-        <li>Your password can’t be too similar to your other personal information.</li>
-        <li>Your password must contain at least 8 characters.</li>
-        <li>Your password can’t be a commonly used password.</li>
-        <li>Your password can’t be entirely numeric.</li>
-      </ul>
+
     </div>
-    <!-- {{form.as_p}} -->
     <input style="margin-top:10px;" class="button" type="submit" value="Register">
   </form>
 
