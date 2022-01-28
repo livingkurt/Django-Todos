@@ -72,6 +72,7 @@ input {
 	overflow: hidden;
 	transition: all 0.2s;
 	box-shadow: 0px;
+	position: relative;
 }
 
 .task-wrapper:hover {
@@ -108,9 +109,12 @@ input {
 	text-decoration: none;
 	font-weight: 900;
 	color: #7aa6f5;
-	font-size: 22px;
+	font-size: 30px;
 	line-height: 0;
 	padding: 20px 0px;
+	position: absolute;
+	right: 28px;
+	top: 7px;
 }
 
 /*Handle Classes*/
